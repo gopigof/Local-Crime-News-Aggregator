@@ -13,6 +13,9 @@ scalacOptions ++= Seq(
 )
 val sparkVersion = "3.3.1"
 
+//val http4sVersion = "0.23.19-RC3"
+
+
 // Dependencies
 libraryDependencies ++= Seq(
 	// Scala Test
@@ -24,7 +27,13 @@ libraryDependencies ++= Seq(
 	"org.apache.spark" %% "spark-core" % sparkVersion,
 	"org.apache.spark" %% "spark-mllib" % sparkVersion,
 	// ElasticSearch
-	"org.elasticsearch" %% "elasticsearch-spark-30" % "8.7.0"
+	"org.elasticsearch" %% "elasticsearch-spark-30" % "8.7.0",
+  "net.sourceforge.htmlcleaner" % "htmlcleaner" % "2.2",
+  "commons-net" % "commons-net" % "3.6",
+	"org.typelevel" %% "cats-effect" % "3.4.9",
+	"org.http4s" %% "http4s-dsl" % "0.23.19-RC3",
+	"org.http4s" %% "http4s-ember-server" % "0.23.19-RC3",
+	"org.http4s" %% "http4s-ember-client" % "0.23.19-RC3"
 )
 
 // Execution & Test Options
