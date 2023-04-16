@@ -5,72 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7991d91a-92f5-47bf-b32b-891361e75d97" name="Changes" comment="[Feat] Dockerized Scala application">
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/elasticsearch/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/elasticsearch/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/elasticsearch/config/elasticsearch.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/curator/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/curator/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/curator/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/curator/config/curator.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/curator/config/delete_log_files_curator.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/curator/curator-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/enterprise-search/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/enterprise-search/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/enterprise-search/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/enterprise-search/config/enterprise-search.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/enterprise-search/enterprise-search-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/filebeat/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/filebeat/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/filebeat/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/filebeat/config/filebeat.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/filebeat/filebeat-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/fleet/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/fleet/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/fleet/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/fleet/agent-apmserver-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/fleet/fleet-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/heartbeat/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/heartbeat/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/heartbeat/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/heartbeat/config/heartbeat.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/heartbeat/heartbeat-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/logspout/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/logspout/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/logspout/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/logspout/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/logspout/logspout-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/logspout/modules.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/metricbeat/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/metricbeat/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/metricbeat/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/metricbeat/config/metricbeat.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/extensions/metricbeat/metricbeat-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/kibana/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/kibana/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/kibana/config/kibana.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/logstash/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/logstash/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/logstash/config/logstash.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/logstash/pipeline/logstash.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/setup/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/setup/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/setup/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/setup/entrypoint.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/setup/lib.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/setup/roles/filebeat_writer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/setup/roles/heartbeat_writer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/setup/roles/logstash_writer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-elk-stack/setup/roles/metricbeat_writer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/edu/neu/coe/csye7200/Entry.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/edu/neu/coe/csye7200/Entry.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -125,14 +71,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Code/Scala/CSYE7200_FinalProject/docker-elk-stack",
+    "last_opened_file_path": "D:/Scala_Project/CSYE7200_FinalProject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
@@ -191,6 +137,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Feat] Dockerized Scala application" />
