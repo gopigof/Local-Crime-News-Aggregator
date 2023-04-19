@@ -52,6 +52,7 @@ object Entry extends App {
 	)
 	println("**********************************Chicago from 2001 to present********************************************")
 	dfCrimeCH.show(20)
+	dfCrimeCH.write.format("es")
 	dfCrimeCH.printSchema()
 
 
