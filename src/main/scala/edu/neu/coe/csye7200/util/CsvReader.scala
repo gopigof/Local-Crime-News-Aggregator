@@ -4,6 +4,7 @@ import com.univocity.parsers.csv.{CsvParser, CsvParserSettings}
 import edu.neu.coe.csye7200.models.{BaseRecord, StatusError}
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
+import org.apache.spark.sql.{DataFrame, SparkSession}
 
 import scala.util.{Failure, Success, Try}
 import scala.util.control.NonFatal
@@ -38,6 +39,25 @@ object CsvReader {
 			}
 		}
 	}
+
+	def loadCsvToDataFrame(filePath: String, delimiter: String = ","): DataFrame = {
+		// Create a SparkSession
+		val spark = SparkSession.builder()
+			.appName("LoadCSVToDataFrame")
+			.master("local[*]")
+			.getOrCreate()
+		spark.sparkContext.setLogLevel("ERROR")
+		// Read CSV file into a DataFrame
+		val dataFrame = spark.read
+			.option("header", "true") // Set header to true if the CSV file has column names
+			.option("inferSchema", "true") // Infer schema automatically
+			.option("delimiter", delimiter) // Set the delimiter for CSV parsing
+			.csv(filePath)
+
+		// Return the DataFrame
+		dataFrame
+	}
+
 }
 
 
