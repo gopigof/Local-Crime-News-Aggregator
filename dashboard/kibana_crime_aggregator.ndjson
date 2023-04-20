@@ -1,0 +1,59 @@
+{
+  "attributes": {
+    "fieldAttrs": "{}",
+    "fieldFormatMap": "{}",
+    "fields": "[]",
+    "name": "Crime Index 1",
+    "runtimeFieldMap": "{}",
+    "sourceFilters": "[]",
+    "timeFieldName": "",
+    "title": "crime-index*",
+    "typeMeta": "{}"
+  },
+  "coreMigrationVersion": "8.7.0",
+  "created_at": "2023-04-20T16:47:43.020Z",
+  "id": "4c427992-9be5-4f8e-b0eb-1e497b2f3f46",
+  "migrationVersion": {
+    "index-pattern": "8.0.0"
+  },
+  "references": [],
+  "type": "index-pattern",
+  "updated_at": "2023-04-20T16:47:43.020Z",
+  "version": "WzUwNjYsN10="
+}
+{
+  "attributes": {
+    "description": "",
+    "kibanaSavedObjectMeta": {
+      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+    },
+    "optionsJSON": "{\"useMargins\":true,\"syncColors\":false,\"syncCursor\":true,\"syncTooltips\":false,\"hidePanelTitles\":false}",
+    "panelsJSON": "[{\"version\":\"8.7.0\",\"type\":\"map\",\"gridData\":{\"x\":0,\"y\":0,\"w\":24,\"h\":15,\"i\":\"f42ca30a-20db-4771-90cb-24d97bc61239\"},\"panelIndex\":\"f42ca30a-20db-4771-90cb-24d97bc61239\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"description\":\"\",\"layerListJSON\":\"[{\\\"locale\\\":\\\"autoselect\\\",\\\"sourceDescriptor\\\":{\\\"type\\\":\\\"EMS_TMS\\\",\\\"isAutoSelect\\\":true,\\\"lightModeDefault\\\":\\\"road_map_desaturated\\\"},\\\"id\\\":\\\"4bf4b983-6401-4e91-8060-8fae2429ac9c\\\",\\\"label\\\":null,\\\"minZoom\\\":0,\\\"maxZoom\\\":24,\\\"alpha\\\":1,\\\"visible\\\":true,\\\"style\\\":{\\\"type\\\":\\\"EMS_VECTOR_TILE\\\",\\\"color\\\":\\\"\\\"},\\\"includeInFitToBounds\\\":true,\\\"type\\\":\\\"EMS_VECTOR_TILE\\\"},{\\\"sourceDescriptor\\\":{\\\"geoField\\\":\\\"Location\\\",\\\"requestType\\\":\\\"heatmap\\\",\\\"resolution\\\":\\\"SUPER_FINE\\\",\\\"id\\\":\\\"a7561bfd-e90a-44d0-9e93-08b28a994417\\\",\\\"type\\\":\\\"ES_GEO_GRID\\\",\\\"applyGlobalQuery\\\":true,\\\"applyGlobalTime\\\":true,\\\"applyForceRefresh\\\":true,\\\"metrics\\\":[{\\\"type\\\":\\\"count\\\"}],\\\"indexPatternRefName\\\":\\\"layer_1_source_index_pattern\\\"},\\\"id\\\":\\\"b35f99ba-c00b-4f70-af41-cced55c62bb0\\\",\\\"label\\\":\\\"Location - GeoPoint\\\",\\\"minZoom\\\":0,\\\"maxZoom\\\":24,\\\"alpha\\\":0.75,\\\"visible\\\":true,\\\"style\\\":{\\\"type\\\":\\\"HEATMAP\\\",\\\"colorRampName\\\":\\\"theclassic\\\"},\\\"includeInFitToBounds\\\":true,\\\"type\\\":\\\"HEATMAP\\\"}]\",\"mapStateJSON\":\"{\\\"adHocDataViews\\\":[],\\\"zoom\\\":8.6,\\\"center\\\":{\\\"lon\\\":-118.30638,\\\"lat\\\":33.99306},\\\"timeFilters\\\":{\\\"from\\\":\\\"now-3y\\\",\\\"to\\\":\\\"now\\\"},\\\"refreshConfig\\\":{\\\"isPaused\\\":true,\\\"interval\\\":60000},\\\"query\\\":{\\\"query\\\":\\\"Crime_Type: THEFT*\\\",\\\"language\\\":\\\"kuery\\\"},\\\"filters\\\":[],\\\"settings\\\":{\\\"autoFitToDataBounds\\\":false,\\\"backgroundColor\\\":\\\"#ffffff\\\",\\\"customIcons\\\":[],\\\"disableInteractive\\\":false,\\\"disableTooltipControl\\\":false,\\\"hideToolbarOverlay\\\":false,\\\"hideLayerControl\\\":false,\\\"hideViewControl\\\":false,\\\"initialLocation\\\":\\\"LAST_SAVED_LOCATION\\\",\\\"fixedLocation\\\":{\\\"lat\\\":0,\\\"lon\\\":0,\\\"zoom\\\":2},\\\"browserLocation\\\":{\\\"zoom\\\":2},\\\"keydownScrollZoom\\\":false,\\\"maxZoom\\\":24,\\\"minZoom\\\":0,\\\"showScaleControl\\\":false,\\\"showSpatialFilters\\\":true,\\\"showTimesliderToggleButton\\\":true,\\\"spatialFiltersAlpa\\\":0.3,\\\"spatialFiltersFillColor\\\":\\\"#DA8B45\\\",\\\"spatialFiltersLineColor\\\":\\\"#DA8B45\\\"}}\",\"uiStateJSON\":\"{\\\"isLayerTOCOpen\\\":true,\\\"openTOCDetails\\\":[\\\"b35f99ba-c00b-4f70-af41-cced55c62bb0\\\"]}\"},\"mapCenter\":{\"lat\":41.81904,\"lon\":-87.94601,\"zoom\":8.6},\"mapBuffer\":{\"minLon\":-89.29687,\"minLat\":41.50858,\"maxLon\":-87.1875,\"maxLat\":42.55308},\"isLayerTOCOpen\":true,\"openTOCDetails\":[\"b35f99ba-c00b-4f70-af41-cced55c62bb0\"],\"hiddenLayers\":[],\"enhancements\":{}}}]",
+    "timeRestore": false,
+    "title": "Crime - ",
+    "version": 1
+  },
+  "coreMigrationVersion": "8.7.0",
+  "created_at": "2023-04-20T17:57:45.626Z",
+  "id": "da941cc0-df9e-11ed-96df-fdea1b19d434",
+  "migrationVersion": {
+    "dashboard": "8.7.0"
+  },
+  "references": [
+    {
+      "id": "4c427992-9be5-4f8e-b0eb-1e497b2f3f46",
+      "name": "f42ca30a-20db-4771-90cb-24d97bc61239:layer_1_source_index_pattern",
+      "type": "index-pattern"
+    }
+  ],
+  "type": "dashboard",
+  "updated_at": "2023-04-20T17:57:45.626Z",
+  "version": "WzUzOTIsN10="
+}
+{
+  "excludedObjects": [],
+  "excludedObjectsCount": 0,
+  "exportedCount": 2,
+  "missingRefCount": 0,
+  "missingReferences": []
+}
