@@ -66,6 +66,7 @@ build/
 
 # Gradle
 .idea/**/gradle.xml
+.idea/scala_compiler.xml
 .idea/**/libraries
 
 # Gradle and Maven with auto-import
