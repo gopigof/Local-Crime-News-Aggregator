@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7991d91a-92f5-47bf-b32b-891361e75d97" name="Changes" comment="[Feat] Dockerized Scala application">
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/edu/neu/coe/csye7200/Entry.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/edu/neu/coe/csye7200/Entry.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/edu/neu/coe/csye7200/util/CsvReader.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/edu/neu/coe/csye7200/util/CsvReader.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +95,7 @@
       <recent name="D:\Code\Scala\CSYE7200_FinalProject\docker-elk-stack" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="ScalaTest.CsvReaderSpec">
     <configuration name="Entry" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="edu.neu.coe.csye7200.Entry" />
       <module name="CSYE7200_FinalProject" />
@@ -112,8 +109,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CsvReaderSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="CSYE7200_FinalProject" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="testClassPath" value="CsvReaderSpec" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.CsvReaderSpec" />
         <item itemvalue="Application.Entry" />
       </list>
     </recent_temporary>
