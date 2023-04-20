@@ -1,4 +1,4 @@
-package edu.neu.coe.csye7200.models
+package edu.neu.coe.csye7200.crimeagg.models
 
 trait Status {
 	val status: String

@@ -1,4 +1,4 @@
-package edu.neu.coe.csye7200.workflows
+package edu.neu.coe.csye7200.crimeagg.workflows
 
 case class Workflow(
 					   source: Source,

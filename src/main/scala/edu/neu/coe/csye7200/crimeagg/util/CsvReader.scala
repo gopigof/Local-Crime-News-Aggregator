@@ -1,7 +1,7 @@
-package edu.neu.coe.csye7200.util
+package edu.neu.coe.csye7200.crimeagg.util
 
 import com.univocity.parsers.csv.{CsvParser, CsvParserSettings}
-import edu.neu.coe.csye7200.models.{BaseRecord, StatusError}
+import edu.neu.coe.csye7200.crimeagg.models.{BaseRecord, StatusError}
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SparkSession}
@@ -40,13 +40,7 @@ object CsvReader {
 		}
 	}
 
-	def loadCsvToDataFrame(filePath: String, delimiter: String = ","): DataFrame = {
-		// Create a SparkSession
-		val spark = SparkSession.builder()
-			.appName("LoadCSVToDataFrame")
-			.master("local[*]")
-			.getOrCreate()
-		spark.sparkContext.setLogLevel("ERROR")
+	def loadCsvToDataFrame(filePath: String, delimiter: String = ",")(implicit spark: SparkSession): DataFrame = {
 		// Read CSV file into a DataFrame
 		val dataFrame = spark.read
 			.option("header", "true") // Set header to true if the CSV file has column names
@@ -57,7 +51,6 @@ object CsvReader {
 		// Return the DataFrame
 		dataFrame
 	}
-
 }
 
 

@@ -1,6 +1,6 @@
+import edu.neu.coe.csye7200.crimeagg.util.CsvReader
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.scalatest.{BeforeAndAfterAll}
-import edu.neu.coe.csye7200.util.CsvReader
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
