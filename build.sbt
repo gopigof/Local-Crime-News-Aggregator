@@ -7,9 +7,9 @@ scalaVersion := "2.12.17"
 scalacOptions ++= Seq(
 	"-encoding", "utf-8",
 	"-deprecation",
-	"-Ywarn-dead-code",
-	"-Ywarn-value-discard",
-	"-Ywarn-unused"
+//	"-Ywarn-dead-code",
+//	"-Ywarn-value-discard",
+//	"-Ywarn-unused"
 )
 val sparkVersion = "3.3.1"
 
