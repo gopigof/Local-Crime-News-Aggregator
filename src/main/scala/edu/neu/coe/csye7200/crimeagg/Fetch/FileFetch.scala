@@ -1,7 +1,7 @@
 package io.forward.ftp
 
 import java.io.{File, FileOutputStream, InputStream}
-import org.apache.commons.net.ftp._
+//import org.apache.commons.net.ftp._
 import org.apache.hadoop.shaded.org.apache.commons.net.ftp.FTPClient
 
 import scala.util.Try

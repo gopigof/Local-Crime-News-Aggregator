@@ -1,10 +1,12 @@
+package edu.neu.coe.csye7200.crimeagg
+
 import edu.neu.coe.csye7200.crimeagg.util.CsvReader
 import org.apache.spark.sql.functions._
+import org.apache.spark.sql.types.{StringType, TimestampType}
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.scalatest.BeforeAndAfterAll
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import org.apache.spark.sql.types.{StringType, TimestampType}
 
 import java.sql.Timestamp
 
@@ -15,7 +17,7 @@ class CsvReaderSpec extends AnyFlatSpec with Matchers with BeforeAndAfterAll {
   // Create SparkSession before running tests
   override def beforeAll(): Unit = {
     spark = SparkSession.builder()
-      .appName("CsvReaderSpec")
+      .appName("edu.neu.coe.csye7200.crimeagg.CsvReaderSpec")
       .master("local[*]")
       .config("spark.sql.legacy.timeParserPolicy", "LEGACY")
       .getOrCreate()

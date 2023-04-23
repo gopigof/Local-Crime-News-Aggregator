@@ -8,9 +8,6 @@ import org.apache.spark.sql.types.StringType
 
 object RunPipeline extends App with SparkContextProvider {
 
-	//	val rdd = CsvReader.read("C:/Users/gopig/Downloads/Crimes_-_2001_to_Present.csv")
-	//	val sink_ = new ElasticSearchPersistence(rdd)
-	//	sink_.run()
 
 	val chicagoCrimeDf = loadCsvToDataFrame(chicagoCrime)
 	val laCrimePastDf = loadCsvToDataFrame(LaCrimePast)
