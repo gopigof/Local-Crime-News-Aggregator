@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "15dcfe4a-26e2-4f40-a4d1-94f528fe88ee",
+		"name": "ElasticSearch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List All Indexes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{hostname}}",
+					"protocol": "http",
+					"host": [
+						"{{hostname}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number of Nodes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{hostname}}/_cat/nodes?format=json&filter_path=ip,name",
+					"protocol": "http",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"_cat",
+						"nodes"
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "filter_path",
+							"value": "ip,name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Index",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mappings\": {\r\n        \"properties\": {\r\n            \"Crime_Loc\": {\r\n                \"type\": \"text\",\r\n                \"fields\": {\r\n                    \"keyword\": {\r\n                        \"type\": \"keyword\",\r\n                        \"ignore_above\": 256\r\n                    }\r\n                }\r\n            },\r\n            \"Crime_Time\": {\r\n                \"type\": \"date\"\r\n            },\r\n            \"Crime_Type\": {\r\n                \"type\": \"text\",\r\n                \"fields\": {\r\n                    \"keyword\": {\r\n                        \"type\": \"keyword\",\r\n                        \"ignore_above\": 256\r\n                    }\r\n                }\r\n            },\r\n            \"Location\": {\r\n                \"type\": \"geo_point\",\r\n                \"fields\": {\r\n                    \"keyword\": {\r\n                        \"type\": \"keyword\",\r\n                        \"ignore_above\": 256\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{hostname}}/crime-index-1/",
+					"protocol": "http",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"crime-index-1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReIndex Index",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Location\": \"34.1016,-118.3295\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{hostname}}/crime-index/_reindex",
+					"protocol": "http",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"crime-index",
+						"_reindex"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Schema",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{hostname}}/crime-index-1/",
+					"protocol": "http",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"crime-index-1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Record Count",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "changeme",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "elastic",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{hostname_}}/crime-index-1/_count",
+					"protocol": "http",
+					"host": [
+						"{{hostname_}}"
+					],
+					"path": [
+						"crime-index-1",
+						"_count"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "elastic",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
